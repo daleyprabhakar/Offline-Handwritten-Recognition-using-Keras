@@ -25,7 +25,7 @@ The algorithm is built with the help of Neural Networks and IAM handwritten reco
 1.	The image is denoised as pre-cautionery measure(i.e. bad image consideration), the filters used for noised filteration are Gaussian filter and Median filter.
 
 <p align="center">
-  <img src="Input.png"  width=2000 height=1000>
+  <img src="Input.png"  width=1200 height=600>
 </p>
 
 2.	Then, CNN's are used to detect the words based on gap between each word(the gap length is being detected by continous training and weights produced in the process).
