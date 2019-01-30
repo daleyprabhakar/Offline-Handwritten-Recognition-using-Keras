@@ -25,7 +25,7 @@ The algorithm is built with the help of Neural Networks and IAM handwritten reco
 1.	The image is denoised as pre-cautionery measure(i.e. bad image consideration), the filters used for noised filteration are Gaussian filter and Median filter.
 
 <p align="center">
-  <img src="Input.png"  width=965 height=189>
+  <img src="Input.png"  width=2479 height=1955>
 </p>
 
 2.	Then, CNN's are used to detect the words based on gap between each word(the gap length is being detected by continous training and weights produced in the process).
@@ -33,7 +33,7 @@ The algorithm is built with the help of Neural Networks and IAM handwritten reco
 3.	After the words are detected, the document provides a bag of objects(word images), which are scalar. Hence to vectorize each object, we are going with the process of clustering the bag of objects, to the number of clusters which equals the number of lines. Thereafter, the objects are sorted out in order by means of horizontal axis.
 
 <p align="center">
-  <img src="Output.png"  width=965 height=189>
+  <img src="Detected.png"  width=520 height=427>
 </p>
 
 4.	After the word detection, each word is taken out as separate image and divided by means of characters and the process of character recognition starts identify each character, which excels through the process of training. CTC is the classifier used to classify the letter of different styles.
@@ -43,5 +43,5 @@ The algorithm is built with the help of Neural Networks and IAM handwritten reco
 6.	Hola!!! the output is there to read.
 
 <p align="center">
-  <img src="Detected.png"  width=965 height=189>
+  <img src="Output.png"  width=965 height=189>
 </p>
